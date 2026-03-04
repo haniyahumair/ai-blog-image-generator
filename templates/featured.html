@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    
+    body {
+      width: 1200px;
+      height: 630px;
+      background: #111111;
+      font-family: 'Arial', sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .container {
+      width: 100%;
+      height: 100%;
+      padding: 60px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .tag {
+      color: #888;
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      margin-bottom: 24px;
+    }
+
+    .headline {
+      color: #ffffff;
+      font-size: 64px;
+      font-weight: 900;
+      line-height: 1.1;
+      max-width: 800px;
+    }
+
+    .accent {
+      width: 80px;
+      height: 6px;
+      background: #ffffff;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p class="tag">{{theme}}</p>
+    <h1 class="headline">{{headline}}</h1>
+    <div class="accent"></div>
+  </div>
+</body>
+</html>
